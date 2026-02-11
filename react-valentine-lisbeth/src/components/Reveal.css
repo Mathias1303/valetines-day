@@ -1,0 +1,90 @@
+.reveal {
+  text-align: center;
+  padding: 2rem;
+}
+
+.heart-svg {
+  width: 80px;
+  height: 72px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 15px rgba(194, 24, 91, 0.3));
+}
+
+.reveal-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  color: #c2185b;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 15px rgba(194, 24, 91, 0.2);
+}
+
+.reveal-message {
+  font-size: 1.15rem;
+  color: #6a5070;
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  font-weight: 300;
+  min-height: 5rem;
+}
+
+.cursor {
+  color: #c2185b;
+  animation: blink 0.7s step-end infinite;
+  font-weight: 300;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.reveal-question {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  color: #ad1457;
+  margin: 1.5rem 0;
+}
+
+.reveal-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn-yes {
+  background: linear-gradient(135deg, #f48fb1, #ce93d8);
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 6px 25px rgba(194, 24, 91, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-yes:hover {
+  box-shadow: 0 8px 35px rgba(194, 24, 91, 0.4);
+}
+
+.btn-no {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid #e1bee7;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  color: #b07aab;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 600px) {
+  .reveal-name { font-size: 2.5rem; }
+  .reveal-message { font-size: 1rem; padding: 0 1rem; }
+  .reveal-question { font-size: 1.6rem; }
+  .heart-svg { width: 60px; height: 54px; }
+}

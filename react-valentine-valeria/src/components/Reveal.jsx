@@ -90,7 +90,7 @@ export default function Reveal({ onAccept }) {
 
       {/* Nombre */}
       <motion.h1 className="reveal-name" variants={childVariants}>
-        Karla
+        Valeria
       </motion.h1>
 
       {/* Mensaje con typewriter */}
